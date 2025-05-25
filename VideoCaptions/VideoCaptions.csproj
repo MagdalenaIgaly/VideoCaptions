@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\videos\video_1\captions.srt" />
+    <Content Remove="wwwroot\videos\video_2\captions.srt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\videos\video_1\captions.vtt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\videos\video_1\clip.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\videos\video_2\captions.vtt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\videos\video_2\clip.mp4">

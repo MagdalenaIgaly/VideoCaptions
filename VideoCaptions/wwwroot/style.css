@@ -1,2 +1,165 @@
 ﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #252222;
+}
+
+.main_title {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+#video {
+    border-radius: 12px;
+}
+
+.video_selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.video_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 16px;
+    width: 220px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #fff;
+}
+
+.video_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video_card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.video_card h2 {
+    margin-top: 12px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.video_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.transcript_box {
+    width: 450px;
+    height: 475px;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 1rem;
+    position: relative;
+    background-color: white;
+    text-align: left;
+    padding: 10px 10px 10px 20px;
+}
+
+.transcript_title {
+    position: sticky;
+    top: 0;
+    background: white;
+    margin: 10px 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#transcript_content {
+    overflow-y: auto;
+    height: 410px; 
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.transcript_line {
+    margin-bottom: 7px;
+    padding: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .transcript_line:hover {
+        background-color: #a5a7cbb3;
+        border-radius: 5px;
+    }
+
+    .transcript_line.active {
+        background-color: #a5a7cbb3;
+        border-radius: 5px;
+    }
+
+.transcript_settings {
+    background-color: #95838338;
+    color: #cbbcbcde;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 30px auto 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+    .transcript_settings label {
+        margin-right: 5px;
+    }
+
+.settings_box {
+    border-radius: 5px;
+    padding: 4px;
+    width: 80px;
+    text-align: center;
+}
+
+.video_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    margin: 30px auto 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.nav_button {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.video_nav .main_title {
+    margin: 0;
+    font-size: 1.6rem;
+    color: white;
 }

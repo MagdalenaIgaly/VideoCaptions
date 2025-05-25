@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+
+    <!-- Navigation bar & video title -->
+    <div class="video_nav">
+        <a href="index.html" class="nav_button" title="Home"><i class="fas fa-home"></i></a>
+        <h1 id="video_title" class="main_title"></h1>
+        <a id="next_video_btn" href="#" class="nav_button" title="Next video"><i class="fas fa-hand-point-right"></i></a>
+    </div>
+
+
+    <!-- Video and transcript -->
+    <div class="video_container">
+        <video id="video" controls="controls" height="420">
+            <source id="video_source" src="" type="video/mp4">
+            <track id="video_track" kind="subtitles" srclang="en" label="English" default>
+        </video>
+
+        <div class="transcript_box">
+            <h2 class="transcript_title">Transkript</h2>
+            <div id="transcript_content"></div>
+        </div>
+    </div>
+
+    <!-- Settings -->
+    <div class="transcript_settings">
+
+        <div>
+            <label for="font_select">Font style:</label>
+            <select class="settings_box" id="font_select">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Tahoma">Tahoma</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="font_size">Font size:</label>
+            <input class="settings_box" type="number" id="font_size" value="14" min="10" max="30"> px
+        </div>
+
+        <div>
+            <label for="font_color">Text color:</label>
+            <input class="settings_box" type="color" id="font_color" value="#ffffff">
+        </div>
+
+        <div>
+            <label for="bg_color">Background color:</label>
+            <input class="settings_box" type="color" id="bg_color" value="#000000">
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
